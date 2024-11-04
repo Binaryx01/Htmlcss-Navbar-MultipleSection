@@ -1,0 +1,87 @@
+* {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+
+/* Style the navigation bar */
+nav {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+    padding: 15px 0; /* Padding around the nav */
+    text-align: center; /* Center align the links */
+    position: fixed; /* Fixed position to keep it on top while scrolling */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Style the links inside the navigation */
+nav a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding around the links */
+    margin: 0 15px; /* Space between links */
+    display: inline-block; /* Display links inline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Change background color and text color on hover */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    color: #3498db; /* Change text color on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    nav a {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+        padding: 8px 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+html, body {
+    height: 100%; /* Ensure the body and HTML take full height */
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+.section {
+    height: 100vh; /* Each section takes full viewport height */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column; /* Align children in a column */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Padding inside sections */
+}
+
+/* Background colors for each section (customize as needed) */
+#section1 {
+    background-color: #3498db; /* Blue */
+    color: white; /* Text color */
+}
+
+#section2 {
+    background-color: #2ecc71; /* Green */
+    color: white; /* Text color */
+}
+
+#section3 {
+    background-color: #e74c3c; /* Red */
+    color: white; /* Text color */
+}
+
+/* Style for headings */
+h1 {
+    font-size: 3em; /* Large font size for headings */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Style for paragraphs */
+p {
+    font-size: 1.2em; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+    max-width: 600px; /* Maximum width for paragraphs */
+}
